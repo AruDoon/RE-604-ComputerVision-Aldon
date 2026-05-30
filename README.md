@@ -1,4 +1,4 @@
-# 🔡 EMNIST Handwritten Character Classification
+# 🔡 Aldon's EMNIST Handwritten Character Classification Assignment
 ### HOG Feature Extraction + Support Vector Machine (SVM)
 
 <div align="center">
@@ -6,21 +6,17 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
 
 <br/>
 
-**[▶️ Watch Full Explanation on YouTube](https://youtu.be/xjsalGC-DD0)**
+**[▶️ Explanation Video Link Here](https://youtu.be/xjsalGC-DD0)**
 
-<br/>
-
-> Midterm Project — Machine Vision (RE604) · Politeknik Batam · Genap 2024/2025
 
 </div>
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project implements a complete **machine learning pipeline** for classifying handwritten letters (A–Z) from the [EMNIST Letters dataset](https://www.kaggle.com/datasets/crawford/emnist/data). The pipeline combines classical computer vision techniques with a supervised classifier:
 
@@ -52,12 +48,14 @@ ComputerVision_Assignment/
 │   ├── sample_images.png
 │   └── sample_predictions.png
 │
-├── MNIST_LetterDataset/
-│   ├── emnist-letters-train.csv
-│   └── emnist-letters-test.csv
+├── MNIST_LetterDataset/ [Deleted]
+│   ├── emnist-letters-train.csv [Deleted]
+│   └── emnist-letters-test.csv [Deleted]
 │
 └── SourceCode/
     └── Aldon_emnist_classification.ipynb
+
+[Note]: Some of the files above are deleted because it's too big
 ```
 
 ---
@@ -77,7 +75,7 @@ ComputerVision_Assignment/
 
 ---
 
-## 🔍 HOG Feature Extraction
+## HOG Feature Extraction
 
 **Histogram of Oriented Gradients (HOG)** captures local edge and gradient structure — highly effective for shape-based recognition tasks like handwritten letters.
 
@@ -97,7 +95,7 @@ Each 28×28 image → **1,728-dimensional HOG feature vector**
 
 ---
 
-## ⚙️ SVM Classifier & Grid Search
+## SVM Classifier & Grid Search
 
 A **Support Vector Machine (SVC)** was used as the classifier. To find the best hyperparameters, **Grid Search with 5-fold Cross-Validation** was applied across 31 parameter combinations.
 
@@ -120,7 +118,7 @@ SVC(kernel='poly', C=1, degree=2, gamma='scale', class_weight='balanced')
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 The dataset was split **80% training / 20% testing** (stratified), following the LOOCV evaluation principle outlined in the assignment.
 
@@ -142,7 +140,7 @@ The dataset was split **80% training / 20% testing** (stratified), following the
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -169,7 +167,7 @@ Then select **Cell → Run All**.
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Library | Version | Purpose |
 |---------|---------|---------|
@@ -184,11 +182,11 @@ Then select **Cell → Run All**.
 
 ## 🎥 Video Explanation
 
-A full walkthrough of the code, methodology, and results is available on YouTube:
+My presentation video is available on YouTube:
 
 <div align="center">
 
-[![Watch on YouTube](https://img.shields.io/badge/▶%20Watch%20Explanation%20Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/xjsalGC-DD0)
+[![Aldon's Presentation Video](https://img.shields.io/badge/▶%20Aldon's%20Explanation%20Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/xjsalGC-DD0)
 
 </div>
 
@@ -209,7 +207,8 @@ Topics covered in the video:
 | Program | Teknik Robotika — Politeknik Batam |
 | Semester | Genap 2024/2025 |
 | Lecturer | Eko Rudiawan Jamzuri |
-| Student | Aldon |
+| Student | Aldon Zufar Putra Twyn |
+| Student ID | 4222301042 |
 
 ---
 
